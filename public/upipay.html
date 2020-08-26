@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+
+</title>
+</head>
+
+<body>
+
+<h2></h2>
+
+<script src="UPI-Link.js">
+
+</script>
+
+	<script>
+		var url_str = window.location.href;//upiid,name,amount,rem
+		var url = new URL(url_str);
+		getUPILink( url.searchParams.get("upiid"), url.searchParams.get("name"), url.searchParams.get("amount"), url.searchParams.get("rem"));
+	</script>
+
+</body>
+</html>
